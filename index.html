@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>熊目撃情報</title>
+    <script src='https://unpkg.com/maplibre-gl/dist/maplibre-gl.js'></script>
+    <link href='https://unpkg.com/maplibre-gl/dist/maplibre-gl.css' rel='stylesheet' />
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+    <style>
+        html, body { height: 100%; margin: 0; }
+        #map { height: 95%; }
+        #fileInput { height: 5%; padding: 10px; }
+    </style>
+</head>
+
+<body>
+    <input type="file" id="fileInput" accept=".csv">
+    <div id="map"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
